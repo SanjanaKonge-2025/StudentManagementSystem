@@ -14,7 +14,7 @@
   
  <style type="text/css"> 
    .enroll{ 
-   background-image: url("images/addstudentbg.jpeg"); 
+   background-image: url("images/addstudentbg.jpg"); 
    background-size: cover; 
    background-repeat: no-repeat; 
    } 
@@ -27,29 +27,33 @@
    width:400px 
    } 
    .view{ 
-      background-image: url("images/viewstudents.jpeg"); 
+      background-image: url("images/viewstudents.jpg"); 
    background-size: cover; 
    background-repeat: no-repeat; 
    } 
- </style>
+ </style> 
 
 </head>
 <body>
    <div class="card">
- <nav class="d-flex justify-content-between p-2 border border-primary" > 
-  <img src="images/cjclogo.jpeg" width="100px" height="50px">  
-  <div class="pt-2"> 
-  <a href="#enroll"> 
-    <button class="btn btn-outline-primary">Enroll Student</button> 
-  </a> 
-  <a href="#view"> 
-    <button class="btn btn-outline-primary">View Student</button> 
-  </a> 
-  <a href="/"> 
-    <button class="btn btn-outline-primary">Logout</button> 
-  </a> 
-  </div> 
- </nav> 
+     <nav class="d-flex justify-content-between p-2 border border-primary" > 
+       <img src="images/cjclogo.jpg" width="100px" height="50px">  
+       
+     <div class="pt-2"> 
+       
+       <a href="#enroll"> 
+         <button class="btn btn-outline-primary">Enroll Student</button> 
+       </a> 
+  
+       <a href="#view"> 
+         <button class="btn btn-outline-primary">View Student</button> 
+       </a> 
+  
+       <a href="/"> 
+         <button class="btn btn-outline-primary">Logout</button> 
+       </a> 
+     </div>  
+     </nav> 
 <section class="vh-100 gradient-custom enroll mt-2"  id="enroll"> 
   <div class="container  h-100"> 
     <div class="row justify-content-center h-100 w-75"> 
@@ -58,102 +62,93 @@
           <div class="card-body mt-0"> 
             <h3 class="heading">Student Enrollment Form</h3> 
              
-  <form action="enroll_student"> 
-              <div class="row " > 
-                <div class="col-md-6 mb-2"> 
- 
-                  <div class="form-outline"> 
-  <input type="text" id="firstName" class="form-control form-control-sm" name="studentFullName"/> 
-                    <label class="form-label" for="firstName">First Full Name</label> 
-                  </div> 
- 
-                </div> 
-                <div class="col-md-6 mb-2"> 
- 
-                  <div class="form-outline"> 
-   <input type="email" id="lastName" class="form-control form-control-sm" name="studentEmail"/> 
-                    <label class="form-label" for="lastName">Student Email</label> 
-                  </div> 
-                </div> 
-              </div> 
- 
-              <div class="row"> 
-                <div class="col-md-6 mb-2 d-flex align-items-center"> 
- 
-                  <div class="form-outline datepicker w-100"> 
-   <input type="number" class="form-control form-control-sm" id="birthdayDate" name="studentAge"/> 
-                    <label for="birthdayDate" class="form-label">Student Age</label> 
-                  </div> 
-                </div> 
+<form action="enroll_student"> 
+  <div class="row " > 
+    
+    <div class="col-md-6 mb-2"> 
+      <div class="form-outline"> 
+        <input type="text" id="firstName" class="form-control form-control-sm" name="studentFullName"/> 
+          <label class="form-label" for="firstName">First Full Name</label> 
+      </div> 
+    </div>
      
-                  <div class="col-md-6 mb-2 pb-2"> 
+    <div class="col-md-6 mb-2"> 
+      <div class="form-outline"> 
+        <input type="email" id="lastName" class="form-control form-control-sm" name="studentEmail"/> 
+          <label class="form-label" for="lastName">Student Email</label> 
+      </div> 
+    </div> 
+    
+  </div> 
  
-                  <div class="form-outline"> 
-   <input type="tel" id="text" class="form-control form-control-sm" name="studentCollegeName"/> 
-                    <label class="form-label" for="phoneNumber">Student College Name</label> 
-                  </div>
-                </div> 
-              </div> 
+  <div class="row"> 
+    
+    <div class="col-md-6 mb-2 d-flex align-items-center">  
+      <div class="form-outline datepicker w-100"> 
+        <input type="number" class="form-control form-control-sm" id="birthdayDate" name="studentAge"/> 
+          <label for="birthdayDate" class="form-label">Student Age</label> 
+      </div> 
+    </div> 
+     
+    <div class="col-md-6 mb-2 pb-2"> 
+      <div class="form-outline"> 
+        <input type="tel" id="text" class="form-control form-control-sm" name="studentCollegeName"/> 
+          <label class="form-label" for="phoneNumber">Student College Name</label> 
+      </div>
+    </div> 
+  </div> 
  
-              <div class="row"> 
-                <div class="col-md-6 mb-2 pb-2"> 
+  <div class="row"> 
+  
+    <div class="col-md-6 mb-2 pb-2">  
+      <div class="form-outline"> 
+        <input type="number" id="emailAddress" class="form-control form-control-sm" name="feesPaid"/> 
+          <label class="form-label" for="emailAddress">Fees Paid</label> 
+      </div> 
+    </div> 
+                            
+    <div class="col-md-6 mb-2"> 
+      
+      <h6 class="mb-2 pb-1">Student Course : </h6> 
+      <div class="form-check form-check-inline"> 
+        <input class="form-check-input" type="radio" name="studentCourse" id="java" value="Java" checked /> 
+          <label class="form-check-label" for="java">Java</label> 
+      </div> 
+      <div class="form-check form-check-inline"> 
+        <input class="form-check-input" type="radio" name="studentCourse" id="python" value="Python" /> 
+          <label class="form-check-label" for="python">Python</label> 
+      </div> 
+      <div class="form-check form-check-inline"> 
+        <input class="form-check-input" type="radio" name="studentCourse" id="testing" value="Testing"/> 
+          <label class="form-check-label" for="testing">Testing</label> 
+      </div> 
  
-                  <div class="form-outline"> 
-   <input type="number" id="emailAddress" class="form-control form-control-sm" name="feesPaid"/> 
-                    <label class="form-label" for="emailAddress">Fees Paid</label> 
-                  </div> 
- 
-                </div> 
-                            <div class="col-md-6 mb-2"> 
- 
-                  <h6 class="mb-2 pb-1">Student Course : </h6> 
- 
-                  <div class="form-check form-check-inline"> 
-  <input class="form-check-input" type="radio" name="studentCourse" id="java" value="Java" 
-checked /> 
-                    <label class="form-check-label" for="java">Java</label> 
-                  </div> 
- 
-                  <div class="form-check form-check-inline"> 
-  <input class="form-check-input" type="radio" name="studentCourse" id="python" value="Python" /> 
-                    <label class="form-check-label" for="python">Python</label> 
-                  </div> 
- 
-                  <div class="form-check form-check-inline"> 
- <input class="form-check-input" type="radio" name="studentCourse" id="testing" value="Testing"/> 
-                    <label class="form-check-label" for="testing">Testing</label> 
-                  </div> 
- 
-                </div> 
+    </div> 
                
-              </div> 
+  </div> 
  
-              <div class="row"> 
-                <div class="col"> 
- 
-                  <select class="select form-control-sm" name="batchMode"> 
-                    <option value="#" disabled >Select Batch Mode</option> 
-                    <option value="Online">Online</option> 
-                    <option value="Offline">Offline</option> 
-                    
-                  </select> 
-                  <label class="form-label select-label">Batch Mode</label> 
- 
-                </div> 
-                 <div class="col"> 
- 
-                  <select class="select form-control-sm" name="batchNumber"> 
-                    <option value="#" disabled>Select Batch Number</option> 
-                    <option value="FDJ-196">FDJ-196</option> 
-                    <option value="REG-196">REG-196</option> 
-                    <option value="FDJ-198">FDJ-198</option> 
-                    <option value="REG-198">REG-198</option> 
-
-                  </select> 
-                  <label class="form-label select-label">Batch Number</label> 
- 
-                </div> 
-              </div> 
+  <div class="row"> 
+    <div class="col"> 
+      <select class="select form-control-sm" name="batchMode"> 
+        <option value="#" disabled >Select Batch Mode</option> 
+        <option value="Online">Online</option> 
+        <option value="Offline">Offline</option> 
+      </select> 
+      <label class="form-label select-label">Batch Mode</label>  
+    </div> 
+   
+  <div class="col"> 
+    <select class="select form-control-sm" name="batchNumber"> 
+      <option value="#" disabled>Select Batch Number</option> 
+      <option value="FDJ-196">FDJ-196</option> 
+      <option value="REG-196">REG-196</option> 
+      <option value="FDJ-198">FDJ-198</option> 
+      <option value="REG-198">REG-198</option> 
+    </select> 
+    
+    <label class="form-label select-label">Batch Number</label> 
+   </div> 
+   </div> 
  
               <div class="mt-2 pt-2 d-flex justify-content-center"> 
                 <input class="btn btn-primary btn-lg" type="submit" value="Submit" /> 
@@ -185,7 +180,7 @@ checked />
          <h1 style="color: red;"> ${message} </h1>
        </marquee>
      </div>
-      
+     <form name="fn">
      <table class="table table-hover" style="font-size:small"> 
         <thead> 
          <tr> 
@@ -213,15 +208,13 @@ checked />
            <td>${s.batchNumber}</td> 
            <td>${s.batchMode}</td> 
            <td>${s.feesPaid}</td> 
-           <td> 
-  
-           <div class="btn-group btn-group-sm" role="group" aria-label="..."> 
-           <button class="btn btn-outline-success">Pay-Fees</button>
-           <button class="btn btn-outline-primary">Shift-Batch</button> 
-           <button class="btn btn-outline-danger">Remove</button> 
-            
-           </div> 
-             
+ 
+           <td>   
+             <div class="btn-group btn-group-sm" role="group" aria-label="..."> 
+               <a class="btn btn-outline-success" href="fees?rollno=${s.studentId}">Pay-Fees</a>
+               <a class="btn btn-outline-primary">Shift-Batch</a> 
+               <a class="btn btn-outline-danger" >Remove</a> 
+             </div>             
            </td> 
             
           </tr> 
@@ -229,9 +222,10 @@ checked />
          
         </tbody> 
       
-     </table>
+       </table>
+     </form>
  </section> 
   
-  </div>
+ </div>
 </body>
 </html>

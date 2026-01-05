@@ -68,4 +68,21 @@ public class AdminController
 		}
 		return "adminscreen";
 	}
+	
+	@RequestMapping("/fees")
+	public String onFees(@RequestParam int rollno,Model m)
+	{
+		Student st=ssi.getSingleStudent(rollno);
+		m.addAttribute("st", st);
+		return "fees";
+	}
+	
+	@RequestMapping("/payfees")
+	public String payFees(@RequestParam int studentid, @RequestParam double ammount, Model m)
+	{
+		ssi.updateStudentFees(studentid, ammount);
+		List<Student> students=ssi.getAllStudent();
+		m.addAttribute("data", students);
+		return "adminscreen";
+	}
 }

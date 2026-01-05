@@ -22,8 +22,9 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" r
     <div class="d-flex justify-content-center align-items-center vh-100"> 
       <div class="card shadow rounded-4 bg-dark" style="width: 22rem;"> 
         <div class="card-body"> 
-          <h3 class="card-title text-center mb-3 text-white">Login</h3> 
-          <form action="login" method="post"> 
+          <h3 class="card-title text-center mb-3 text-white">Login</h3>
+           
+         <form action="login" method="post"> 
             <!-- Username --> 
             <div class="mb-3"> 
               <label for="username" class="form-label text-white">Username</label> 
